@@ -8,6 +8,7 @@
         private string _Tel;
         private int _CIN;
         public int _count = 0;
+
         //constructeur permettant d’initialiser tous les attributs: 
         public Client(string nom, string prenom, string tel, int CIN)
         {
@@ -28,24 +29,41 @@
             _CIN = CIN;
 
         }
-
-        //Encapsulation des attributs en utilisant les propriétés
-        public string Nom { get => _Nom; set => _Nom = value; }
-        public string Prenom { get => _Prenom; set => _Prenom = value; }
-        public string Tel { get => _Tel; set => _Tel = value; }
-        public int CIN { get => _CIN; set => _CIN = value; }
-        public int Count { get => _count; private set => _count = value; }
-
-        //Méthode Affichzr qui affiche les information du client:
-        public void Afficher(Client client)
+        //Constructeur quirécupère les valeurs des propriétés en console:
+        public Client()
         {
-            Console.WriteLine($"nom:{client.Nom}");
-            Console.WriteLine($"nom:{client.Nom}");
-            Console.WriteLine($"nom:{client.Nom}");
-            Console.WriteLine($"CIN:{client.CIN}");
+            Console.WriteLine($"Compte {Count}");
+            Console.WriteLine("Donner leCIN:");
+            CIN = int.Parse(Console.ReadLine());
+            Console.WriteLine("Donner le nom:");
+            Nom = Console.ReadLine();
+            Console.WriteLine("Donner leCIprénom:");
+            Prenom = Console.ReadLine();
+            Console.WriteLine("Donner le numéro de téléphone:");
+            Tel = Console.ReadLine();
+            Console.WriteLine("Montant à déposer?");
+            public int Amount = int.Parse(Console.ReadLine());
+        Count++;
         }
 
-        //méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
+    //Encapsulation des attributs en utilisant les propriétés
+    public string Nom { public get => _Nom; public set => _Nom = value; }
+    public string Prenom { public get => _Prenom; public set => _Prenom = value; }
+    public string Tel { public get => _Tel; public set => _Tel = value; }
+    public int CIN { get => _CIN; set => _CIN = value; }
+    public int Count { public get => _count; private set => _count = value; }
 
+    //Méthode Afficher qui affiche les information du client:
+    public void Afficher(Client client)
+    {
+        Console.WriteLine("Détail du compte:");
+        Console.WriteLine($"nom:{client.Nom}");
+        Console.WriteLine($"nom:{client.Nom}");
+        Console.WriteLine($"nom:{client.Nom}");
+        Console.WriteLine($"CIN:{client.CIN}");
     }
+
+    //méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
+
+}
 }

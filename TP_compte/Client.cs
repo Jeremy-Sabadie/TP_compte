@@ -16,7 +16,7 @@ internal class Client
         Prenom = prenom;
         Tel = tel;
         this.CIN = CIN;
-        //Compteur du nombre de création de compte par les constructeurs.
+        //Compteur incrémenté de 1 à chaque création de client du nombre de création de compte par les constructeurs.
         Count++;
 
 
@@ -40,7 +40,7 @@ internal class Client
         CIN = int.Parse(Console.ReadLine());
         Console.WriteLine("Donner le nom:");
         Nom = Console.ReadLine();
-        Console.WriteLine("Donner leCIprénom:");
+        Console.WriteLine("Donner le prénom:");
         Prenom = Console.ReadLine();
         Console.WriteLine("Donner le numéro de téléphone:");
         Tel = Console.ReadLine();

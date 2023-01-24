@@ -66,11 +66,13 @@ internal class Client
         Console.WriteLine($"téléphone:{client.Tel}");
         Console.WriteLine($"nom:{client.Nom}");
         Console.WriteLine($"CIN:{client.CIN}");
+        //méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
+
+        //méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
+        //méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
     }
 }
-//méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
-//méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
-//méthode Crediter permettant de Crediter le compte, prenant une somme et un compte en paramètres.
+
 
 
 

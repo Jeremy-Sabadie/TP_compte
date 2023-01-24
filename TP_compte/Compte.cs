@@ -3,7 +3,7 @@
     internal class Compte
     {//Attributs de la classe compte:
         private double Sold;
-        private int Code;
+        private Guid Code = new Guid()//Guid: génère un code aléatoire.
         private Client owner;
         //Constructeur par défault qui incrémente le code du compte lors de sa création:
         public Compte()
